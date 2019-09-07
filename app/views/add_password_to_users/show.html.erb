@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Password digest:</strong>
+  <%= @add_password_to_user.password_digest %>
+</p>
+
+<p>
+  <strong>String:</strong>
+  <%= @add_password_to_user.string %>
+</p>
+
+<%= link_to 'Edit', edit_add_password_to_user_path(@add_password_to_user) %> |
+<%= link_to 'Back', add_password_to_users_path %>

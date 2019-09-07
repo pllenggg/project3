@@ -1,0 +1,27 @@
+<%= form_with(model: add_password_to_user, local: true) do |form| %>
+  <% if add_password_to_user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(add_password_to_user.errors.count, "error") %> prohibited this add_password_to_user from being saved:</h2>
+
+      <ul>
+      <% add_password_to_user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :password_digest %>
+    <%= form.text_field :password_digest %>
+  </div>
+
+  <div class="field">
+    <%= form.label :string %>
+    <%= form.text_field :string %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
