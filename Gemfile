@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'knock'
+gem 'jwt'
 
 
 # Use ActiveStorage variant
@@ -37,6 +38,8 @@ gem 'knock'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+
+gem 'rack-cors', :require => 'rack/cors'
 
 
 group :development, :test do
@@ -52,7 +55,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'pry-rails'
-  gem 'rack-cors'
+ 
 
 end
 
