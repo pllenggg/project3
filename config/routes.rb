@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
   scope '/api' do
-    post 'user_token' => 'user_token#create'
+    post '/user_token' => 'user_token#create'
+    get '/users/current.json' => 'users#get_current_user'
     resources :users
-    #user only that need user_token#create
+    resources :posts
+    resources :post
+    post :follow, to: 'users/follows#create', as: :follow
+    delete :follow, to: 'users/follows#destroy', as: :unfollow
   end
 
-  resources :post
-  resources :follow
 
-  get '/current_user' => 'users#loggedin_user'
 end

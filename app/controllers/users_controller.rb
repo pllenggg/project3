@@ -1,5 +1,11 @@
 class UsersController < ApplicationController
+  # before_action :authenticate_user
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+
+  #get the current user api
+  def get_current_user
+    render :json => current_user
+  end
 
   # GET /users
   # GET /users.json
@@ -77,6 +83,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:email, :username, :name, :bio, :profile_photo, :password, :password_confirmation)
+      params.require(:user).permit(:email, :name, :bio, :profile_photo, :password, :password_confirmation)
     end
 end
