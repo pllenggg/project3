@@ -26,6 +26,7 @@ kitty_post1 = Post.create post_image: 'https://res.cloudinary.com/dluw1enan/imag
 
 kitty_post2 = Post.create post_image: 'https://res.cloudinary.com/dluw1enan/image/upload/c_scale,h_400,w_400/v1568076906/project3/kitty%20photo/Kitty_profile_photo_bzn5ki.jpg', caption: "Just in case you don't know, I'm from Russia", user_id: kitty.id
 
+
 puts 'posts are created'
 
 Follow.create follower_id: kitty.id, following_id: albert.id
