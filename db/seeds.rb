@@ -2,7 +2,7 @@ Follow.destroy_all
 Post.destroy_all 
 User.destroy_all
 
-kitty = User.create email: 'kitty@cat.com', name: 'kittycat', password: 'chicken', password_confirmation: 'chicken', profile_photo: "https:///res-console.cloudinary.com/dluw1enan/thumbnails/transform/v1/image/upload/v1568292710/https:///res-console.cloudinary.com/dluw1enan/thumbnails/transform/v1/image/upload//v1568292710/cHJvamVjdDMva2l0dHkgcGhvdG8va2l0dHk1X24yN2pmbg==/drilldown" , bio: " Bachelor of Fishery at Tigermaoww University. Love luke warm bath"
+kitty = User.create email: 'kitty@cat.com', name: 'kittycat', password: 'chicken', password_confirmation: 'chicken', profile_photo: "https://res.cloudinary.com/dluw1enan/image/upload/v1568292543/project3/kitty%20photo/kitty5_n27jfn.jpg" , bio: " Bachelor of Fishery at Tigermaoww University. Love luke warm bath"
 
 albert = User.create email: 'albert@cat.com', name: 'alberreto', password: 'chicken', password_confirmation: 'chicken', profile_photo: 'https://res.cloudinary.com/dluw1enan/image/upload/v1568028335/project3/munchu%20photo/munchu_profile_gvhjpg.jpg', bio: "Obviously, I'm the hottest munchkin on meowstagram!! xox"
 
